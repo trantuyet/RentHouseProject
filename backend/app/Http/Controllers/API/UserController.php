@@ -5,32 +5,43 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Tymon\JWTAuth\Exceptions\JWTException;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 class UserController extends Controller
 {
-    function getAllUsers() {
+     function update(Request $request, $id)
+     {
+         $user = User::find($id);
+         $user->fill($request->all());
+         $user->save();
+
+         $data = [
+             'status' => 'success',
+             'message' => 'Cập nhật thông tin thành công'
+         ];
+
+         return response()->json($data);
+     }
+
+    public function index()
+    {
         $users = User::all();
-
-        $data = [
-            'status' => 'success',
-            'data' => $users,
-        ];
-
-        return response()->json($data);
+        return response()->json($users, 200);
     }
 
-
-    function update(Request $request, $id)
+    public function login(Request $request)
     {
-        $user = User::find($id);
-        $user->fill($request->all());
-        $user->save();
+        $credentials = $request->only('email', 'password');
 
-        $data = [
-            'status' => 'success',
-            'message' => 'Cập nhật thông tin thành công'
-        ];
+        try {
+            if (!$token = JWTAuth::attempt($credentials)) {
+                return response()->json(['error' => 'invalid_credentials'], 400);
+            }
+        } catch (JWTException $e) {
+            return response()->json(['error' => 'could_not_create_token'], 500);
+        }
 
-        return response()->json($data);
+        return response()->json(compact('token'));
     }
 }
