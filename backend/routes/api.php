@@ -20,10 +20,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/users', [UserController::class, 'index']);
-Route::put('update/{id}', [UserController::class, 'update']);
 Route::post('login', [UserController::class, 'login']);
+Route::get('users', [UserController::class, 'index']);
 
 Route::group(['middleware' => 'auth.jwt'], function () {
-    Route::get('users', [UserController::class, 'index']);
 });
-

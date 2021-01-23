@@ -46,6 +46,7 @@ import {OverlayModule} from "@angular/cdk/overlay";
 import {PortalModule} from "@angular/cdk/portal";
 import {ScrollingModule} from "@angular/cdk/scrolling";
 import {MatIconModule} from "@angular/material/icon";
+import { ToastrModule } from 'ngx-toastr';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { ListhouseComponent } from './house/listhouse/listhouse.component';
 import { RegisterComponent } from './user/register/register.component';
@@ -61,6 +62,7 @@ import { ButtonComponent } from './user/button/button.component';
     ButtonComponent,
   ],
   imports: [
+    ToastrModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,

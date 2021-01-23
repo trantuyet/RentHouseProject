@@ -7,7 +7,7 @@ import {RegisterComponent} from './user/register/register.component'
 const routes: Routes = [
 
   {
-    path: 'login',
+    path: 'dashboard/login',
     component:LoginComponent
   },
   {
