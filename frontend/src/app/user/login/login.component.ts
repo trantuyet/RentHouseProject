@@ -3,7 +3,7 @@ import {Observable} from "rxjs";
 import {UserService} from "../user.service";
 import {Router} from "@angular/router";
 import { NotificationService } from 'src/app/notification.service';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -31,6 +31,7 @@ export class LoginComponent implements OnInit {
         // console.log(data);
         this.showToasterSuccess()
         localStorage.setItem('auth_token', data.token);
+        this.router.navigate(['/dashboard']);
       }, error => this.showToasterError())
   }
 
