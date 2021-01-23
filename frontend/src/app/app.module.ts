@@ -49,6 +49,7 @@ import {MatIconModule} from "@angular/material/icon";
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { ListhouseComponent } from './house/listhouse/listhouse.component';
 import { RegisterComponent } from './user/register/register.component';
+import { ButtonComponent } from './user/button/button.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { RegisterComponent } from './user/register/register.component';
     DashboardComponent,
     ListhouseComponent,
     RegisterComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,
