@@ -11,14 +11,14 @@ class ChangePasswordController extends Controller
 {
     function changePassword(ChangePasswordRequest $request , $id): \Illuminate\Http\JsonResponse
     {
-        $account = User::find($id);
-        $userPassword = $account->password;
+        $user = User::find($id);
+        $userPassword = $user->password;
         $correctPassword = Hash::check($request->oldPassword, $userPassword);
-        $correctPasswordConfirm = $request->newPassword === $request->newPasswordConfirm;
+        $correctPasswordConfirm = $request->newPassword == $request->newPasswordConfirm;
         if ($correctPassword){
             if ($correctPasswordConfirm){
-                $account->password = Hash::make($request->newPassword);
-                $account->save();
+                $user->password = Hash::make($request->newPassword);
+                $user->save();
                 return response()->json('Đổi mật khẩu thành công');
             }else{
                 return response()->json('Nhập lại mật khẩu không đúng');
