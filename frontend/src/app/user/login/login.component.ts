@@ -23,7 +23,6 @@ export class LoginComponent implements OnInit {
   login() {
     this.userService.login(this.email, this.password).subscribe(
       data => {
-        // console.log(data);
         localStorage.setItem('auth_token', data.token);
       }
     )

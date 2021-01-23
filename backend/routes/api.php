@@ -18,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/users', [UserController::class, 'index']);
+Route::put('update/{id}', [UserController::class, 'update']);
 Route::post('login', [UserController::class, 'login']);
 
 Route::group(['middleware' => 'auth.jwt'], function () {
