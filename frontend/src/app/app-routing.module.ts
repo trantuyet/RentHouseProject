@@ -1,15 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {UpdateprofileComponent} from "./user/updateprofile/updateprofile.component";
 import {DashboardComponent} from './dashboard/dashboard/dashboard.component';
 import {LoginComponent} from "./user/login/login.component";
-
-
+import {ListhouseComponent} from './house/listhouse/listhouse.component'
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   component: UpdateprofileComponent
-  // },
+
   {
     path: 'login',
     component:LoginComponent
@@ -17,6 +12,10 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent
+  },
+  {
+    path: 'listhouse',
+    component: ListhouseComponent
   }
 ];
 

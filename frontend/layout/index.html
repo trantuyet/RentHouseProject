@@ -3,7 +3,7 @@
 
 <!-- Basic Page Needs
 ================================================== -->
-<title>Rent House Unlimited</title>
+<title>Findeo</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -30,7 +30,7 @@
 		<h4>Compare Properties <div class="csm-mobile-trigger"></div></h4>
 
 		<div class="csm-properties">
-
+			 
 			<!-- Property -->
 			<div class="listing-item compact">
 				<a href="single-property-page-2.html" class="listing-img-container">
@@ -44,7 +44,7 @@
 					<img src="images/listing-01.jpg" alt="">
 				</a>
 			</div>
-
+			
 			<!-- Property -->
 			<div class="listing-item compact">
 				<a href="single-property-page-2.html" class="listing-img-container">
@@ -58,7 +58,7 @@
 					<img src="images/listing-03.jpg" alt="">
 				</a>
 			</div>
-
+			
 			<!-- Property -->
 			<div class="listing-item compact">
 				<a href="single-property-page-2.html" class="listing-img-container">
@@ -98,8 +98,19 @@
 
 				<!-- Top bar -->
 				<ul class="top-bar-menu">
-					<li><i class="fa fa-phone"></i> Hotline: 0932 272 450 </li>
-					<li><i class="fa fa-envelope"></i> <a href="#">rentHouseUnlimited@gmail.com</a></li>
+					<li><i class="fa fa-phone"></i> (123) 123-456 </li>
+					<li><i class="fa fa-envelope"></i> <a href="#">office@example.com</a></li>
+					<li>
+						<div class="top-bar-dropdown">
+							<span>Dropdown Menu</span>
+							<ul class="options">
+								<li><div class="arrow"></div></li>
+								<li><a href="#">Nice First Link</a></li>
+								<li><a href="#">Second Link With Long Title</a></li>
+								<li><a href="#">Third Link</a></li>
+							</ul>
+						</div>
+					</li>
 				</ul>
 
 			</div>
@@ -111,7 +122,10 @@
 
 				<!-- Social Icons -->
 				<ul class="social-icons">
-					<li><a class="facebook" href="www.facebook.com/profile.php"><i class="icon-facebook"></i></a></li>
+					<li><a class="facebook" href="#"><i class="icon-facebook"></i></a></li>
+					<li><a class="twitter" href="#"><i class="icon-twitter"></i></a></li>
+					<li><a class="gplus" href="#"><i class="icon-gplus"></i></a></li>
+					<li><a class="pinterest" href="#"><i class="icon-pinterest"></i></a></li>
 				</ul>
 
 			</div>
@@ -126,13 +140,13 @@
 	<!-- Header -->
 	<div id="header">
 		<div class="container">
-
+			
 			<!-- Left Side Content -->
 			<div class="left-side">
-
+				
 				<!-- Logo -->
 				<div id="logo">
-					<a href="index.html"><img src="images/logo3.png" alt=""></a>
+					<a href="index.html"><img src="images/logo.png" alt=""></a>
 				</div>
 
 
@@ -150,7 +164,14 @@
 				<nav id="navigation" class="style-1">
 					<ul id="responsive">
 
-					<a class="current" href="#">Rent House Unlimited</a>
+						<li><a class="current" href="#">Home</a>
+							<ul>
+								<li><a href="index.html">Home 1</a></li>
+								<li><a href="index-2.html">Home 2</a></li>
+								<li><a href="index-3.html">Home 3</a></li>
+								<li><a href="index-4.html">Home 4</a></li>
+							</ul>
+						</li>
 
 						<li><a href="#">Listings</a>
 							<ul>
@@ -191,6 +212,8 @@
 								<li><a href="#">Search Styles</a>
 									<ul>
 										<li><a href="index.html">Home Search 1</a></li>
+										<li><a href="index-2.html">Home Search 2</a></li>
+										<li><a href="index-3.html">Home Search 3</a></li>
 										<li><a href="listings-list-full-width.html">Advanced Style</a></li>
 										<li><a href="listings-list-with-sidebar.html">Sidebar Search</a></li>
 									</ul>
@@ -237,7 +260,7 @@
 				</nav>
 				<div class="clearfix"></div>
 				<!-- Main Navigation / End -->
-
+				
 			</div>
 			<!-- Left Side Content / End -->
 
@@ -272,21 +295,23 @@
 
 					<!-- Main Search Container -->
 					<div class="main-search-container">
-						<h2>Rent House Unlimited - Cho thuê nhà hấp dẫn</h2>
-
+						<h2>Find Your Dream Home</h2>
+						
 						<!-- Main Search -->
 						<form class="main-search-form">
-
+							
 							<!-- Type -->
 							<div class="search-type">
-                <label class="active"> <input name="tab" type="radio">For Rent</label>
+								<label class="active"><input class="first-tab" name="tab" checked="checked" type="radio">Any Status</label>
+								<label><input name="tab" type="radio">For Sale</label>
+								<label><input name="tab" type="radio">For Rent</label>
 								<div class="search-type-arrow"></div>
 							</div>
 
-
+							
 							<!-- Box -->
 							<div class="main-search-box">
-
+								
 								<!-- Main Search Input -->
 								<div class="main-search-input larger-input">
 									<input type="text" class="ico-01" id="autocomplete-input" placeholder="Enter address e.g. street, city and state or zip" value=""/>
@@ -299,7 +324,7 @@
 									<!-- Property Type -->
 									<div class="col-md-4">
 										<select data-placeholder="Any Type" class="chosen-select-no-single" >
-											<option>Any Type</option>
+											<option>Any Type</option>	
 											<option>Apartments</option>
 											<option>Houses</option>
 											<option>Commercial</option>
@@ -311,7 +336,7 @@
 
 									<!-- Min Price -->
 									<div class="col-md-4">
-
+										
 										<!-- Select Input -->
 										<div class="select-input">
 											<input type="text" placeholder="Min Price" data-unit="USD">
@@ -323,7 +348,7 @@
 
 									<!-- Max Price -->
 									<div class="col-md-4">
-
+										
 										<!-- Select Input -->
 										<div class="select-input">
 											<input type="text" placeholder="Max Price" data-unit="USD">
@@ -347,7 +372,7 @@
 
 											<!-- Min Price -->
 											<div class="col-md-6">
-
+												
 												<!-- Select Input -->
 												<div class="select-input">
 													<input type="text" placeholder="Min Area" data-unit="Sq Ft">
@@ -358,7 +383,7 @@
 
 											<!-- Max Price -->
 											<div class="col-md-6">
-
+												
 												<!-- Select Input -->
 												<div class="select-input">
 													<input type="text" placeholder="Max Area" data-unit="Sq Ft">
@@ -377,8 +402,8 @@
 											<!-- Min Area -->
 											<div class="col-md-6">
 												<select data-placeholder="Beds" class="chosen-select-no-single" >
-													<option label="blank"></option>
-													<option>Beds (Any)</option>
+													<option label="blank"></option>	
+													<option>Beds (Any)</option>	
 													<option>1</option>
 													<option>2</option>
 													<option>3</option>
@@ -390,8 +415,8 @@
 											<!-- Max Area -->
 											<div class="col-md-6">
 												<select data-placeholder="Baths" class="chosen-select-no-single" >
-													<option label="blank"></option>
-													<option>Baths (Any)</option>
+													<option label="blank"></option>	
+													<option>Baths (Any)</option>	
 													<option>1</option>
 													<option>2</option>
 													<option>3</option>
@@ -402,11 +427,11 @@
 
 										</div>
 										<!-- Row / End -->
-
+			
 
 										<!-- Checkboxes -->
 										<div class="checkboxes in-row">
-
+									
 											<input id="check-2" type="checkbox" name="check">
 											<label for="check-2">Air Conditioning</label>
 
@@ -417,7 +442,7 @@
 											<label for="check-4">Central Heating</label>
 
 											<input id="check-5" type="checkbox" name="check">
-											<label for="check-5">Laundry Room</label>
+											<label for="check-5">Laundry Room</label>	
 
 
 											<input id="check-6" type="checkbox" name="check">
@@ -428,7 +453,7 @@
 
 											<input id="check-8" type="checkbox" name="check">
 											<label for="check-8">Window Covering</label>
-
+									
 										</div>
 										<!-- Checkboxes / End -->
 
@@ -458,15 +483,15 @@
 ================================================== -->
 <div class="container">
 	<div class="row">
-
+	
 		<div class="col-md-12">
 			<h3 class="headline margin-bottom-25 margin-top-65">Newly Added</h3>
 		</div>
-
+		
 		<!-- Carousel -->
 		<div class="col-md-12">
 			<div class="carousel">
-
+				
 				<!-- Listing Item -->
 					<div class="carousel-item">
 					<div class="listing-item">
@@ -491,7 +516,7 @@
 							</div>
 
 						</a>
-
+						
 						<div class="listing-content">
 
 							<div class="listing-title">
@@ -539,7 +564,7 @@
 							<img src="images/listing-02.jpg" alt="">
 
 						</a>
-
+						
 						<div class="listing-content">
 
 							<div class="listing-title">
@@ -588,7 +613,7 @@
 							<img src="images/listing-03.jpg" alt="">
 
 						</a>
-
+						
 						<div class="listing-content">
 
 							<div class="listing-title">
@@ -641,7 +666,7 @@
 							</div>
 
 						</a>
-
+						
 						<div class="listing-content">
 
 							<div class="listing-title">
@@ -689,7 +714,7 @@
 
 							<img src="images/listing-05.jpg" alt="">
 						</a>
-
+						
 						<div class="listing-content">
 
 							<div class="listing-title">
@@ -734,7 +759,7 @@
 
 	<!-- Box Headline -->
 	<h3 class="headline-box">What are you looking for?</h3>
-
+	
 	<!-- Content -->
 	<div class="container">
 		<div class="row">
@@ -820,7 +845,7 @@
 		<div class="col-md-12">
 			<h3 class="headline centered margin-bottom-35 margin-top-10">Most Popular Places <span>Properties In Most Popular Places</span></h3>
 		</div>
-
+		
 		<div class="col-md-4">
 
 			<!-- Image Box -->
@@ -837,8 +862,8 @@
 				</div>
 			</a>
 
-		</div>
-
+		</div>	
+			
 		<div class="col-md-8">
 
 			<!-- Image Box -->
@@ -849,7 +874,7 @@
 				</div>
 			</a>
 
-		</div>
+		</div>	
 
 		<div class="col-md-8">
 
@@ -861,8 +886,8 @@
 				</div>
 			</a>
 
-		</div>
-
+		</div>	
+			
 		<div class="col-md-4">
 
 			<!-- Image Box -->
@@ -893,12 +918,12 @@
 
 				<!-- Blog Post -->
 				<div class="blog-post">
-
+					
 					<!-- Img -->
 					<a href="blog-post.html" class="post-img">
 						<img src="images/blog-post-01.jpg" alt="">
 					</a>
-
+					
 					<!-- Content -->
 					<div class="post-content">
 						<h3><a href="#">8 Tips to Help You Finding New Home</a></h3>
@@ -916,12 +941,12 @@
 
 				<!-- Blog Post -->
 				<div class="blog-post">
-
+					
 					<!-- Img -->
 					<a href="blog-post.html" class="post-img">
 						<img src="images/blog-post-02.jpg" alt="">
 					</a>
-
+					
 					<!-- Content -->
 					<div class="post-content">
 						<h3><a href="#">Bedroom Colors You'll Never Regret</a></h3>
@@ -939,12 +964,12 @@
 
 				<!-- Blog Post -->
 				<div class="blog-post">
-
+					
 					<!-- Img -->
 					<a href="blog-post.html" class="post-img">
 						<img src="images/blog-post-03.jpg" alt="">
 					</a>
-
+					
 					<!-- Content -->
 					<div class="post-content">
 						<h3><a href="#">What to Do a Year Before Buying Apartment</a></h3>
@@ -983,7 +1008,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5 col-sm-6">
-				<img class="footer-logo" src="images/logo3.png" alt="">
+				<img class="footer-logo" src="images/logo.png" alt="">
 				<br><br>
 				<p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
 			</div>
@@ -1007,7 +1032,7 @@
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<div class="clearfix"></div>
-			</div>
+			</div>		
 
 			<div class="col-md-3  col-sm-12">
 				<h4>Contact Us</h4>
@@ -1027,11 +1052,11 @@
 			</div>
 
 		</div>
-
+		
 		<!-- Copyright -->
 		<div class="row">
 			<div class="col-md-12">
-				<div class="copyrights">© 2021 Rent.</div>
+				<div class="copyrights">© 2016 Findeo. All Rights Reserved.</div>
 			</div>
 		</div>
 

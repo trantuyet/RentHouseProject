@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UpdateprofileComponent } from './user/updateprofile/updateprofile.component';
 import { LoginComponent } from './user/login/login.component';
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
@@ -48,13 +47,16 @@ import {PortalModule} from "@angular/cdk/portal";
 import {ScrollingModule} from "@angular/cdk/scrolling";
 import {MatIconModule} from "@angular/material/icon";
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import { ListhouseComponent } from './house/listhouse/listhouse.component';
+import { RegisterComponent } from './user/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UpdateprofileComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    ListhouseComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
