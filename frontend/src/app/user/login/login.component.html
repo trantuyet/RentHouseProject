@@ -1,72 +1,239 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <title>Findeo</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Bootstrap Sign in Form with Social Login Buttons</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 </head>
+
 <body>
-<div class="login-form">
-  <form method="post">
-    <h2 class="text-center">Sign in</h2>
-    <div class="text-center social-btn">
-      <a href="#" class="btn btn-danger btn-block"><i class="fa fa-google"></i> Sign in with <b>Google</b></a>
-    </div>
-    <div class="or-seperator"><i>or</i></div>
-    <div class="form-group">
-      <div class="input-group">
-        <div class="input-group-prepend">
-                    <span class="input-group-text">
-                        <span class="fa fa-user"></span>
-                    </span>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+
+  <!-- Compare Properties Widget
+  ================================================== -->
+  <div class="compare-slide-menu">
+
+    <div class="csm-trigger"></div>
+  </div>
+  <!-- Compare Properties Widget / End -->
+
+
+  <!-- Header Container
+  ================================================== -->
+  <header id="header-container">
+
+    <!-- Topbar -->
+    <div id="top-bar">
+      <div class="container">
+
+        <!-- Left Side Content -->
+        <div class="left-side">
+
+          <!-- Top bar -->
+          <ul class="top-bar-menu">
+            <li><i class="fa fa-phone"></i> (123) 123-456 </li>
+            <li><i class="fa fa-envelope"></i> <a href="#">office@example.com</a></li>
+            <li>
+              <div class="top-bar-dropdown">
+                <span>Dropdown Menu</span>
+                <ul class="options">
+                  <li><div class="arrow"></div></li>
+                  <li><a href="#">Nice First Link</a></li>
+                  <li><a href="#">Second Link With Long Title</a></li>
+                  <li><a href="#">Third Link</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
         </div>
-        <label>
-          <input matInput type="email" [(ngModel)]="email" class="form-control" name="email" required email
-                 #emails='ngModel' [class.is-invalid]="emails.invalid && emails.touched" placeholder="email">
-        </label>
-        <div *ngIf="emails.errors && (emails.valid || emails.touched)">
-          <small class="text-danger" *ngIf="emails.errors.required">Email không được để trống</small>
-          <small class="text-danger" *ngIf="emails.errors.email">Email phải nhập đúng định dạng</small>
+        <!-- Left Side Content / End -->
+
+
+        <!-- Left Side Content -->
+        <div class="right-side">
+
+          <!-- Social Icons -->
+          <ul class="social-icons">
+            <li><a class="gplus" href="#"><i class="icon-gplus"></i></a></li>
+          </ul>
+
+        </div>
+        <!-- Left Side Content / End -->
+
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <!-- Topbar / End -->
+
+
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
+
+        <!-- Left Side Content -->
+        <div class="left-side">
+
+          <!-- Logo -->
+          <div id="logo">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+          </div>
+
+
+          <!-- Mobile Navigation -->
+          <div class="mmenu-trigger">
+            <button class="hamburger hamburger--collapse" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+            </button>
+          </div>
+
+
+          <!-- Main Navigation -->
+          <nav id="navigation" class="style-1">
+            <ul id="responsive">
+
+              <li><a href="#">Home</a>
+              </li>
+
+              <li><a href="#">Listings</a>
+              </li>
+
+              <li><a href="#">Features</a>
+              </li>
+
+              <li><a class="current" href="#">Pages</a></li>
+
+            </ul>
+          </nav>
+          <div class="clearfix"></div>
+          <!-- Main Navigation / End -->
+
+        </div>
+        <!-- Left Side Content / End -->
+
+        <!-- Right Side Content / End -->
+        <div class="right-side">
+          <!-- Header Widget -->
+          <div class="header-widget">
+            <a href="login" class="sign-in"><i class="fa fa-user"></i> Log In</a>
+          </div>
+          <!-- Header Widget / End -->
+        </div>
+        <!-- Right Side Content / End -->
+
+      </div>
+    </div>
+    <!-- Header / End -->
+
+  </header>
+  <div class="clearfix"></div>
+  <!-- Header Container / End -->
+
+
+
+  <!-- Titlebar
+  ================================================== -->
+  <div id="titlebar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <h2>Log In </h2>
+
+          <!-- Breadcrumbs -->
+          <nav id="breadcrumbs">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li>Log In </li>
+            </ul>
+          </nav>
+
         </div>
       </div>
     </div>
-    <div class="form-group">
-      <div class="input-group">
-        <div class="input-group-prepend">
-                    <span class="input-group-text">
-                        <i class="fa fa-lock"></i>
-                    </span>
-        </div>
-        <div>
-          <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="password" class="form-control" name="password"
-                 required pattern="[\w]+[\w]{5}" type="password" #pass='ngModel'
-                 [class.is-invalid]="pass.invalid && pass.touched" placeholder="Password">
-        </div>
-        <a mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-           [attr.aria-pressed]="hide">
-          <mat-icon> {{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-        </a>
-        <div *ngIf="pass.errors && (pass.valid || pass.touched)">
-          <small class="text-danger" *ngIf="pass.errors.required">Mật khẩu không được để trống</small>
-          <small class="text-danger" *ngIf="pass.errors.pattern">Mật khẩu phải hơn 6 ký tự </small>
+  </div>
+
+
+  <!-- Contact
+  ================================================== -->
+
+  <!-- Container -->
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+
+        <button class="button social-login via-gplus"><i class="fa fa-google-plus"></i> Đăng nhập bằng Google</button>
+        <!--Tab -->
+        <div class="my-account style-1 margin-top-5 margin-bottom-40">
+
+          <ul class="tabs-nav">
+            <li class=""><a href="login/#tab1">Đăng nhập</a></li>
+          </ul>
+
+          <div class="tabs-container alt">
+
+            <!-- Login -->
+            <div class="tab-content" id="tab1" >
+              <form method="post" class="login">
+
+                <p class="form-row form-row-wide">
+                  <label for="username">Username:
+                    <i class="im im-icon-Male"></i>
+                    <input type="text" class="input-text" name="username" id="username" value="" />
+                  </label>
+                </p>
+
+                <p class="form-row form-row-wide">
+                  <label for="password">Password:
+                    <i class="im im-icon-Lock-2"></i>
+                    <input class="input-text" type="password" name="password" id="password"/>
+                  </label>
+                </p>
+
+                <p class="form-row">
+                  <input type="submit" class="button border margin-top-10" name="login" value="Login" />
+
+                  <label for="rememberme" class="rememberme">
+                    <input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember Me</label>
+                </p>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="form-group">
-      <button type="submit" class="btn btn-success btn-block login-btn" (click)="login()">Sign in</button>
-    </div>
-    <div class="clearfix">
-      <label class="float-left form-check-label"><input type="checkbox"> Remember me</label>
-      <a href="#" class="float-right text-success">Forgot Password?</a>
     </div>
 
-  </form>
-  <div class="hint-text">Don't have an account? <a href="#" class="text-success">Register Now!</a></div>
+  </div>
+  <!-- Container / End -->
+
+
+  <!-- Scripts
+  ================================================== -->
+  <script type="text/javascript" src="src/assets/scripts/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="src/assets/scripts/jquery-migrate-3.1.0.min.js"></script>
+  <script type="text/javascript" src="src/assets/scripts/chosen.min.js"></script>
+  <script type="text/javascript" src="src/assets/scripts/magnific-popup.min.js"></script>
+  <script type="text/javascript" src="src/assets/scripts/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="src/assets/scripts/rangeSlider.js"></script>
+  <script type="text/javascript" src="src/assets/scripts/sticky-kit.min.js"></script>
+  <script type="text/javascript" src="src/assets/scripts/slick.min.js"></script>
+  <script type="text/javascript" src="src/assets/scripts/masonry.min.js"></script>
+  <script type="text/javascript" src="src/assets/scripts/mmenu.min.js"></script>
+  <script type="text/javascript" src="src/assets/scripts/tooltips.min.js"></script>
+  <script type="text/javascript" src="src/assets/scripts/custom.js"></script>
+
 </div>
+<!-- Wrapper / End -->
+
 </body>
 </html>
