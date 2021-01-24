@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './user/login/login.component';
@@ -45,13 +46,25 @@ import {OverlayModule} from "@angular/cdk/overlay";
 import {PortalModule} from "@angular/cdk/portal";
 import {ScrollingModule} from "@angular/cdk/scrolling";
 import {MatIconModule} from "@angular/material/icon";
+import { ToastrModule } from 'ngx-toastr';
+import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import { ListhouseComponent } from './house/listhouse/listhouse.component';
+import { RegisterComponent } from './user/register/register.component';
+import { ButtonComponent } from './user/button/button.component';
+import { AddhouseComponent } from './house/addhouse/addhouse.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent,
+    ListhouseComponent,
+    RegisterComponent,
+    ButtonComponent,
+    AddhouseComponent,
   ],
   imports: [
+    ToastrModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
@@ -97,6 +110,7 @@ import {MatIconModule} from "@angular/material/icon";
     OverlayModule,
     PortalModule,
     ScrollingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

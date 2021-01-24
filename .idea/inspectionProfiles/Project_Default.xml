@@ -1,0 +1,45 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="15">
+            <item index="0" class="java.lang.String" itemvalue="[(ngmodel)]" />
+            <item index="1" class="java.lang.String" itemvalue="email" />
+            <item index="2" class="java.lang.String" itemvalue="matinput" />
+            <item index="3" class="java.lang.String" itemvalue="#emails" />
+            <item index="4" class="java.lang.String" itemvalue="[class.is-invalid]" />
+            <item index="5" class="java.lang.String" itemvalue="*ngif" />
+            <item index="6" class="java.lang.String" itemvalue="email[class.is-invalid]" />
+            <item index="7" class="java.lang.String" itemvalue="(click)" />
+            <item index="8" class="java.lang.String" itemvalue="#pass" />
+            <item index="9" class="java.lang.String" itemvalue="[type]" />
+            <item index="10" class="java.lang.String" itemvalue="[attr.aria-label]" />
+            <item index="11" class="java.lang.String" itemvalue="mat-icon-button" />
+            <item index="12" class="java.lang.String" itemvalue="[attr.aria-pressed]" />
+            <item index="13" class="java.lang.String" itemvalue="matsuffix" />
+            <item index="14" class="java.lang.String" itemvalue="routerlink" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="7">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="mat-icon" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
