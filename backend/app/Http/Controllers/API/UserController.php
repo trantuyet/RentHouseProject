@@ -10,6 +10,20 @@ use Tymon\JWTAuth\Facades\JWTAuth;
 
 class UserController extends Controller
 {
+     function update(Request $request, $id)
+     {
+         $user = User::find($id);
+         $user->fill($request->all());
+         $user->save();
+
+         $data = [
+             'status' => 'success',
+             'message' => 'Cập nhật thông tin thành công'
+         ];
+
+         return response()->json($data);
+     }
+
     public function index()
     {
         $users = User::all();
