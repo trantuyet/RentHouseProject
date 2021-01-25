@@ -2,8 +2,7 @@
 <html>
 <head>
 
-  <!-- Basic Page Needs
-  ================================================== -->
+
   <title>Findeo</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -16,8 +15,6 @@
 <div id="wrapper">
 
 
-  <!-- Compare Properties Widget
-  ================================================== -->
   <div class="compare-slide-menu">
 
     <div class="csm-trigger"></div>
@@ -25,8 +22,6 @@
   <!-- Compare Properties Widget / End -->
 
 
-  <!-- Header Container
-  ================================================== -->
   <header id="header-container">
 
     <!-- Topbar -->
@@ -38,13 +33,15 @@
 
           <!-- Top bar -->
           <ul class="top-bar-menu">
-            <li><i class="fa fa-phone"></i> (123) 123-456 </li>
+            <li><i class="fa fa-phone"></i> (123) 123-456</li>
             <li><i class="fa fa-envelope"></i> <a href="#">office@example.com</a></li>
             <li>
               <div class="top-bar-dropdown">
                 <span>Dropdown Menu</span>
                 <ul class="options">
-                  <li><div class="arrow"></div></li>
+                  <li>
+                    <div class="arrow"></div>
+                  </li>
                   <li><a href="#">Nice First Link</a></li>
                   <li><a href="#">Second Link With Long Title</a></li>
                   <li><a href="#">Third Link</a></li>
@@ -139,9 +136,6 @@
   <!-- Header Container / End -->
 
 
-
-  <!-- Titlebar
-  ================================================== -->
   <div id="titlebar">
     <div class="container">
       <div class="row">
@@ -153,7 +147,7 @@
           <nav id="breadcrumbs">
             <ul>
               <li><a href="#">Home</a></li>
-              <li>Log In </li>
+              <li>Log In</li>
             </ul>
           </nav>
 
@@ -162,9 +156,6 @@
     </div>
   </div>
 
-
-  <!-- Contact
-  ================================================== -->
 
   <!-- Container -->
   <div class="container">
@@ -181,41 +172,71 @@
           <div class="tabs-container alt">
 
             <!-- Register -->
-            <div class="tab-content" id="tab2" >
+            <div class="tab-content" id="tab2">
 
               <form method="post" class="register">
 
-                <p class="form-row form-row-wide">
-                  <label for="username2">Username:
+                <div class="form-row form-row-wide">
+                  <label>Username:
                     <i class="im im-icon-Male"></i>
-                    <input type="text" class="input-text" name="username" id="username2" value="" />
+                    <input matInput type="text" [(ngModel)]="user.name" name="userName" required #userName="ngModel"
+                           [class.is-invalid]="userName.invalid && userName.touched" placeholder="Tên người dùng ">
                   </label>
-                </p>
+                  <div *ngIf="userName.errors && (userName.valid || userName.touched)">
+                    <small class="text-danger" *ngIf="userName.errors.required">Tên người dùng không được để
+                      trống</small>
+                  </div>
+                </div>
 
-                <p class="form-row form-row-wide">
-                  <label for="email2">Email Address:
+                <div class="form-row form-row-wide">
+                  <label>Email Address:
                     <i class="im im-icon-Mail"></i>
-                    <input type="text" class="input-text" name="email" id="email2" value="" />
-                  </label>
-                </p>
-
-                <p class="form-row form-row-wide">
-                  <label for="password1">Password:
+                    <input matInput [(ngModel)]="email" name="email" class="form-control" required email type="text"
+                           #emails='ngModel'
+                           [class.is-invalid]="emails.invalid && emails.touched" placeholder="Nhập email"> </label>
+                </div>
+                <div *ngIf="emails.errors && (emails.valid || emails.touched)">
+                  <small class="text-danger" *ngIf="emails.errors.required">Email không được để trống</small>
+                  <small class="text-danger" *ngIf="emails.errors.email">Email phải nhập đúng định dạng</small>
+                </div>
+                <div class="form-row form-row-wide">
+                  <label>Password:
                     <i class="im im-icon-Lock-2"></i>
-                    <input class="input-text" type="password" name="password1" id="password1"/>
+                    <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="userPassword" class="form-control"
+                           name="password" required pattern=".{6,8}" type="password" #pass='ngModel'
+                           [class.is-invalid]="pass.invalid && pass.touched" placeholder="Password"/>
                   </label>
-                </p>
+                  <div *ngIf="pass.errors && (pass.valid || pass.touched)">
+                    <small class="text-danger" *ngIf="pass.errors.required">Mật khẩu không được để trống</small>
+                    <small class="text-danger" *ngIf="pass.errors.pattern">Mật khẩu giới hạn từ 6 đến 8 ký tự </small>
+                  </div>
+                </div>
 
-                <p class="form-row form-row-wide">
-                  <label for="password2">Repeat Password:
+                <div class="form-row form-row-wide">
+                  <label>Repeat Password:
                     <i class="im im-icon-Lock-2"></i>
-                    <input class="input-text" type="password" name="password2" id="password2"/>
+                    <input matInput [type]="hide2 ? 'newPasswordConfirm' : 'text'" [(ngModel)]="newPasswordConfirm"
+                           type="password" required #newPassAgain="ngModel"
+                           [class.is-invalid]="newPassAgain.invalid && newPassAgain.touched" id="name"
+                           name="newPassAgain" placeholder="Nhập lại mật khẩu"
+                    />
+<!--                    <a mat-icon-button matSuffix (click)="hide2 = !hide2" [attr.aria-label]="'Hide newPasswordConfirm'"-->
+<!--                       [attr.aria-pressed]="hide">-->
+<!--&lt;!&ndash;                      <mat-icon>{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>&ndash;&gt;-->
+<!--                    </a>-->
                   </label>
-                </p>
+                </div>
+                <div *ngIf="newPassAgain.errors && (newPassAgain.valid || newPassAgain.touched)">
+                  <small class="text-danger" *ngIf="newPassAgain.errors.required">Mật khẩu mới không được để trống</small>
+                </div>
+                <div *ngIf="newPassAgain.valid && newPassAgain.value != newPasswordConfirm.value">
+                  <small class="text-danger" *ngIf="newPassAgain.valid && newPassAgain.value != newPasswordConfirm.value">Mật khẩu không
+                    khớp </small>
+                </div>
 
-                <p class="form-row">
-                  <input type="submit" class="button border fw margin-top-10" name="register" value="Register" />
-                </p>
+                <div class="form-row">
+                  <input type="submit" class="button border fw margin-top-10"  (click)="onSubmit()"/>
+                </div>
 
               </form>
             </div>
@@ -226,11 +247,7 @@
     </div>
 
   </div>
-  <!-- Container / End -->
 
-
-  <!-- Scripts
-  ================================================== -->
   <script type="text/javascript" src="src/assets/scripts/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="src/assets/scripts/jquery-migrate-3.1.0.min.js"></script>
   <script type="text/javascript" src="src/assets/scripts/chosen.min.js"></script>
@@ -245,7 +262,7 @@
   <script type="text/javascript" src="src/assets/scripts/custom.js"></script>
 
 </div>
-<!-- Wrapper / End -->
+
 
 </body>
 </html>
