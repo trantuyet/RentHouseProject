@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <!-- Basic Page Needs
   ================================================== -->
-  <title>Rent House Unlimited - Update Profile</title>
+  <title>Rent House Unlimited - Create New House</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
 </head>
-
 <body>
 
 <!-- Wrapper -->
@@ -23,7 +20,9 @@
     <div class="csm-trigger"></div>
 
     <div class="csm-content">
-      <h4>Compare Properties <div class="csm-mobile-trigger"></div></h4>
+      <h4>Compare Properties
+        <div class="csm-mobile-trigger"></div>
+      </h4>
 
       <div class="csm-properties">
 
@@ -94,13 +93,15 @@
 
           <!-- Top bar -->
           <ul class="top-bar-menu">
-            <li><i class="fa fa-phone"></i> (123) 123-456 </li>
+            <li><i class="fa fa-phone"></i> (123) 123-456</li>
             <li><i class="fa fa-envelope"></i> <a href="#">office@example.com</a></li>
             <li>
               <div class="top-bar-dropdown">
                 <span>Dropdown Menu</span>
                 <ul class="options">
-                  <li><div class="arrow"></div></li>
+                  <li>
+                    <div class="arrow"></div>
+                  </li>
                   <li><a href="#">Nice First Link</a></li>
                   <li><a href="#">Second Link With Long Title</a></li>
                   <li><a href="#">Third Link</a></li>
@@ -110,6 +111,23 @@
           </ul>
 
         </div>
+        <!-- Left Side Content / End -->
+
+
+        <!-- Left Side Content -->
+        <div class="right-side">
+
+          <!-- Social Icons -->
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="icon-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="icon-twitter"></i></a></li>
+            <li><a class="gplus" href="#"><i class="icon-gplus"></i></a></li>
+            <li><a class="pinterest" href="#"><i class="icon-pinterest"></i></a></li>
+          </ul>
+
+        </div>
+        <!-- Left Side Content / End -->
+
       </div>
     </div>
     <div class="clearfix"></div>
@@ -188,10 +206,20 @@
                       <li><a href="single-property-page-3.html">Property Style 3</a></li>
                     </ul>
                   </li>
+                  <li><a href="#">Search Styles</a>
+                    <ul>
+                      <li><a href="index.html">Home Search 1</a></li>
+                      <li><a href="index-2.html">Home Search 2</a></li>
+                      <li><a href="index-3.html">Home Search 3</a></li>
+                      <li><a href="listings-list-full-width.html">Advanced Style</a></li>
+                      <li><a href="listings-list-with-sidebar.html">Sidebar Search</a></li>
+                    </ul>
+                  </li>
                   <li><a href="#">My Account</a>
                     <ul>
-                      <li><a href="my-profile.html">Cập nhật tài khoản </a></li>
+                      <li><a href="my-profile.html">My Profile</a></li>
                       <li><a href="my-bookmarks.html">Bookmarked Listings</a></li>
+                      <li><a href="my-properties.html">My Properties</a></li>
                       <li><a href="change-password.html">Change Password</a></li>
                     </ul>
                   </li>
@@ -242,7 +270,7 @@
             <div class="user-menu">
               <div class="user-name"><span><img src="images/agent-03.jpg" alt=""></span>Hi, John!</div>
               <ul>
-                <li><a href="my-profile.html"><i class="sl sl-icon-user"></i> Cập nhật tài khoản </a></li>
+                <li><a href="my-profile.html"><i class="sl sl-icon-user"></i> My Profile</a></li>
                 <li><a href="my-bookmarks.html"><i class="sl sl-icon-star"></i> Bookmarks</a></li>
                 <li><a href="my-properties.html"><i class="sl sl-icon-docs"></i> My Properties</a></li>
                 <li><a href="index.html"><i class="sl sl-icon-power"></i> Log Out</a></li>
@@ -262,7 +290,6 @@
   </header>
   <div class="clearfix"></div>
   <!-- Header Container / End -->
-
 
 
   <!-- Titlebar
@@ -301,20 +328,13 @@
           <div class="my-account-nav-container">
 
             <ul class="my-account-nav">
-              <li class="sub-nav-title">Manage Account</li>
-              <li><a href="my-profile.html" class="current"><i class="sl sl-icon-user"></i> My Profile</a></li>
-              <li><a href="my-bookmarks.html"><i class="sl sl-icon-star"></i> Bookmarked Listings</a></li>
+              <li class="sub-nav-title">Create New House</li>
+              <li><a href="my-profile.html" class="current"><i class="sl sl-icon-user"></i> Thêm nhà mới </a></li>
             </ul>
 
             <ul class="my-account-nav">
-              <li class="sub-nav-title">Manage Listings</li>
-              <li><a href="my-properties.html"><i class="sl sl-icon-docs"></i> My Properties</a></li>
-              <li><a href="submit-property.html"><i class="sl sl-icon-action-redo"></i> Submit New Property</a></li>
-            </ul>
-
-            <ul class="my-account-nav">
-              <li><a href="change-password.html"><i class="sl sl-icon-lock"></i> Change Password</a></li>
-              <li><a href="#"><i class="sl sl-icon-power"></i> Log Out</a></li>
+              <li><a href="dashboard/changepassword"><i class="sl sl-icon-lock"></i> Change Password</a></li>
+              <li><a href="dashboard/logout"><i class="sl sl-icon-power"></i> Log Out</a></li>
             </ul>
 
           </div>
@@ -325,41 +345,111 @@
       <div class="col-md-8">
         <div class="row">
 
+          <form [formGroup]="formTemplate" (submit)="onSubmit(formTemplate.value)">
+            <div class="col-md-8 my-profile">
+              <h4 class="margin-top-0 margin-bottom-30"> Tạo nhà mới </h4>
+              <div class="form-group">
+                <label> Tên nhà</label>
+                <input value="Name of your house" formControlName="namehouse" type="text">
+                <div class="text-danger" *ngIf="isSubmitted && formControls.namehouse.errors?.required"> Không được để
+                  trống
+                </div>
+              </div>
+              <div class="form-group">
+                <label> Loại phòng</label>
+                <select formControlName="typeofroom" data-placeholder="Loại phòng" class="chosen-select-no-single">
+                  <option value="single">Phòng đơn</option>
+                  <option value="couple">Phòng đôi</option>
+                  <option value="president">Phòng tổng thống</option>
+                  <option value="vip">Phòng VIP</option>
+                  <option value="luxury">Phòng Luxury</option>
+                </select>
+              </div>
 
-          <div class="col-md-8 my-profile">
-            <h4 class="margin-top-0 margin-bottom-30">Cập nhật tài khoản</h4>
+              <div class="row with-forms">
 
-            <label>Họ Và Tên </label>
-            <input value="Jennie Wilson" type="text">
+                <!-- Min Area -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label> Số lượng phòng ngủ
+                      <select formControlName="bedroom" class="chosen-select-no-single">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
 
-            <label>Địa Chỉ </label>
-            <input value="Agent In New York" type="text">
+                <!-- Max Area -->
+                <div class="form-group">
+                  <div class="col-md-6">
+                    <label> Số lượng phòng tắm
+                      <select formControlName="bathroom" class="chosen-select-no-single">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+              </div>
 
-            <label>Số Điện Thoại</label>
-            <input value="(123) 123-456" type="text">
+              <div class="form-group">
+                <label>Địa chỉ</label>
+                <input value="Viết rõ địa chỉ nhà bạn (số nhà, ngõ, đường để dễ tìm kiếm)" type="text"
+                       class="form-control" formControlName="address">
+                <div class="text-danger" *ngIf="isSubmitted && formControls.address.errors?.required"> Không được để
+                  trống
+                </div>
+              </div>
+              <h4 class="margin-top-50 margin-bottom-25">Mô tả chung</h4>
+              <div class="form-group">
+              <textarea formControlName="desc" class="form-control" name="about" id="about" cols="30" rows="10">
+              Nhà của bạn có những điểm gì nổi bật?
+              Hàng xóm có hòa đồng không?
+              An ninh của khu bạn ở có tốt không, etc></textarea>
+              </div>
 
-            <label>Email</label>
-            <input value="jennie@example.com" type="text">
+              <div class="form-group">
+              <label>Giá tiền theo ngày
+                <input class="form-control" formControlName="priceperday" type="number" data-unit="VND">
+              </label>
+              </div>
 
-            <button class="button margin-top-20 margin-bottom-20">Save Changes</button>
-          </div>
+              <button class="button margin-top-20 margin-bottom-20"> Lưu thay đổi</button>
+            </div>
 
-          <div class="col-md-4">
-            <!-- Avatar -->
-            <div class="edit-profile-photo">
-              <img src="images/agent-02.jpg" alt="">
-              <div class="change-photo-btn">
-                <div class="photoUpload">
-                  <span><i class="fa fa-upload"></i> Upload Photo</span>
-                  <input type="file" class="upload" />
+            <div class="col-md-4">
+              <!-- Avatar -->
+              <div>
+                <img [src]="imgSrc" width="350px" height="350px" (click)="fileUploader.click()">
+              </div>
+              <div class="edit-profile-photo">
+                <div class="change-photo-btn">
+                  <div class="photoUpload">
+                    <div class="form-group">
+                      <span><i class="fa fa-upload"></i>Đăng ảnh nhà</span>
+                      <input type="file" accept="image/*" class="form-control" #fileUploader formControlName="imageUrl"
+                             (change)="showPreview($event)">
+                      <div class="text-danger" *ngIf="isSubmitted && formControls.imageUrl.errors?.required"> Không được
+                        để trống.
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-
-          </div>
+          </form>
         </div>
       </div>
-
     </div>
   </div>
 
@@ -375,7 +465,8 @@
         <div class="col-md-5 col-sm-6">
           <img class="footer-logo" src="images/logo.png" alt="">
           <br><br>
-          <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
+          <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia
+            tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
         </div>
 
         <div class="col-md-4 col-sm-6 ">
@@ -384,6 +475,9 @@
             <li><a href="#">Login</a></li>
             <li><a href="#">Sign Up</a></li>
             <li><a href="#">My Account</a></li>
+            <li><a href="#">Add Property</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Privacy Policy</a></li>
           </ul>
 
           <ul class="footer-links">
@@ -446,14 +540,8 @@
   <script type="text/javascript" src="src/assets/scripts/mmenu.min.js"></script>
   <script type="text/javascript" src="src/assets/scripts/tooltips.min.js"></script>
   <script type="text/javascript" src="src/assets/scripts/custom.js"></script>
-
-
-
-
-
 </div>
 <!-- Wrapper / End -->
-
 
 </body>
 </html>
