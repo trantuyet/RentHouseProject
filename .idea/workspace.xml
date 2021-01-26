@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89fee8c2-0bf1-4ff5-ae9b-4d0da84df89d" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/frontend/layout/images/defaultimage.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/src/app/house/addhouse/addhouse.component.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/src/app/house/addhouse/addhouse.component.html" afterDir="false" />
@@ -181,6 +182,12 @@
       <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/services.php" afterDir="false" />
+>>>>>>> dc5908f835b4ab3689d20769e1dcc14bdf76b493
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,6 +327,11 @@
       <path value="$PROJECT_DIR$/backend/vendor/tymon/jwt-auth" />
       <path value="$PROJECT_DIR$/backend/vendor/namshi/jose" />
       <path value="$PROJECT_DIR$/backend/vendor/lcobucci/jwt" />
+<<<<<<< HEAD
+=======
+      <path value="$PROJECT_DIR$/backend/vendor/league/oauth1-client" />
+      <path value="$PROJECT_DIR$/backend/vendor/laravel/socialite" />
+>>>>>>> dc5908f835b4ab3689d20769e1dcc14bdf76b493
     </include_path>
   </component>
   <component name="ProjectId" id="1nKNzYwJKVnbMUMaxtSfZ1MT9vh" />
@@ -334,10 +346,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Post_Manager" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../image-upload" />
+>>>>>>> dc5908f835b4ab3689d20769e1dcc14bdf76b493
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -346,7 +362,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="$PROJECT_DIR$/frontend/src/app/house" />
+=======
+>>>>>>> dc5908f835b4ab3689d20769e1dcc14bdf76b493
       <recent name="$PROJECT_DIR$/frontend" />
       <recent name="$PROJECT_DIR$/frontend/src/app/user/login" />
       <recent name="$PROJECT_DIR$/frontend/src/app" />
@@ -369,9 +388,16 @@
       <workItem from="1611279418662" duration="22612000" />
       <workItem from="1611385899711" duration="10757000" />
       <workItem from="1611416849948" duration="149000" />
+<<<<<<< HEAD
       <workItem from="1611417022363" duration="3447000" />
       <workItem from="1611582960982" duration="5904000" />
       <workItem from="1611627175002" duration="6643000" />
+=======
+      <workItem from="1611417022363" duration="4163000" />
+      <workItem from="1611423509126" duration="941000" />
+      <workItem from="1611463915255" duration="3998000" />
+      <workItem from="1611563311820" duration="12969000" />
+>>>>>>> dc5908f835b4ab3689d20769e1dcc14bdf76b493
     </task>
     <servers />
   </component>
