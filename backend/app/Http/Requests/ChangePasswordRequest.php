@@ -11,9 +11,9 @@ class ChangePasswordRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize()
+    public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,7 @@ class ChangePasswordRequest extends FormRequest
     public function rules()
     {
         return [
-            //
-        ];
+            'newPassword' => 'required|min:6',
+            'newPasswordConfirm' => 'required|min:6'];
     }
 }

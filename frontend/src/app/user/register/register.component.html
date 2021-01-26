@@ -179,7 +179,7 @@
                 <div class="form-row form-row-wide">
                   <label>Username:
                     <i class="im im-icon-Male"></i>
-                    <input matInput type="text" [(ngModel)]="user.name" name="userName" required #userName="ngModel"
+                    <input matInput type="text" [(ngModel)]="name" name="userName" required #userName="ngModel"
                            [class.is-invalid]="userName.invalid && userName.touched" placeholder="Tên người dùng ">
                   </label>
                   <div *ngIf="userName.errors && (userName.valid || userName.touched)">
@@ -212,7 +212,6 @@
                   </div>
                 </div>
 
-                <div class="form-row form-row-wide">
                   <label>Repeat Password:
                     <i class="im im-icon-Lock-2"></i>
                     <input matInput [type]="hide2 ? 'newPasswordConfirm' : 'text'" [(ngModel)]="newPasswordConfirm"
@@ -225,7 +224,7 @@
 <!--&lt;!&ndash;                      <mat-icon>{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>&ndash;&gt;-->
 <!--                    </a>-->
                   </label>
-                </div>
+
                 <div *ngIf="newPassAgain.errors && (newPassAgain.valid || newPassAgain.touched)">
                   <small class="text-danger" *ngIf="newPassAgain.errors.required">Mật khẩu mới không được để trống</small>
                 </div>
