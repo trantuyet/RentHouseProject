@@ -19,11 +19,11 @@ export class UserService {
       'email': email,
       'password': password
     };
-    return this.http.post(`http://127.0.0.1:8000/api/login`, data, {headers: reqHeader, responseType: 'json'});
+    return this.http.post(`http://127.0.0.1:8001/api/login`, data, {headers: reqHeader, responseType: 'json'});
   }
 
   register(user: Object): Observable<Object> {
-    return this.http.post(`http://127.0.0.1:8000/api/register`, user);
+    return this.http.post(`http://127.0.0.1:8001/api/register`, user);
   }
 
   changePassword(id: string | null, oldPassword: string, newPassword: string, confirmPassword: string): Observable<Object> {
@@ -37,7 +37,7 @@ export class UserService {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + auth_token
     });
-    return this.http.put(`http://127.0.0.1:8000/api/changePassword/${id}`, data, {headers: reqHeader});
+    return this.http.put(`http://127.0.0.1:8001/api/changePassword/${id}`, data, {headers: reqHeader});
   }
 
 

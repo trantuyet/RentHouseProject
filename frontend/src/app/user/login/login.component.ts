@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Observable} from "rxjs";
 import {UserService} from "../user.service";
-import {Router} from "@angular/router";
+import {Router} from '@angular/router';
 import { NotificationService } from 'src/app/notification.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @Component({
@@ -15,6 +15,9 @@ export class LoginComponent implements OnInit {
   hide = true;
   submitted = false;
   result!: Observable<any>;
+  private authTokenRepo: any;
+  private token: any;
+
 
 
   constructor(private userService: UserService,
@@ -56,5 +59,10 @@ export class LoginComponent implements OnInit {
       'thông báo'
     );
   }
+  // tslint:disable-next-line:typedef
+  logout() {
+      localStorage.clear();
+      this.router.navigate(['']);
+    }
 
 }
