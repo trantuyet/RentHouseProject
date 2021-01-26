@@ -32,7 +32,9 @@ const routes: Routes = [
     path: 'addhouse',
     component: AddhouseComponent
   },
-  { path: 'dashboard/logout',
+  { path: 'logout',
+    // redirectTo: 'dashboard',
+    // pathMatch: 'full',
     component: LogoutComponent
   },
 

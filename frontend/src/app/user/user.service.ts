@@ -10,8 +10,9 @@ export class UserService {
   private email: null;
   private password: null;
 
-  constructor(private http:HttpClient) {
+  constructor(private http: HttpClient) {
   }
+
   login(email: string, password: string): Observable<any> {
     const reqHeader = new HttpHeaders({
       'Content-Type': 'application/json',
@@ -25,9 +26,8 @@ export class UserService {
 
   // updateprofile(avatar: string, fullname:string, address:string, phone:number, email: string)
 
-  logout() {
-    sessionStorage.removeItem(this.EMAIL_SESSION_ATTRIBUTE_NAME);
-    this.email = null;
-    this.password = null;
+  logout(): any {
+    localStorage.removeItem('token');
+    localStorage.removeItem('email');
   }
 }

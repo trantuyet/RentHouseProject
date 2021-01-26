@@ -30,7 +30,7 @@ Route::group(['middleware' => 'auth.jwt'], function () {
     Route::get('house',[HouseController::class,'index']);
      });
 Route::prefix('house')->group(function () {
-    Route::get('/', [HouseController::class, 'index']);
+    Route::get('/listhouse', [HouseController::class, 'index']);
     Route::get('/{id}', [HouseController::class, 'show']);
     Route::post('/', [HouseController::class, 'store']);
     Route::put('/{id}', [HouseController::class, 'update']);
