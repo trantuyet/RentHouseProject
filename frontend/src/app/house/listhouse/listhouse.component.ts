@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ImageService} from 'src/app/shared/image.service';
 
 @Component({
   selector: 'app-listhouse',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listhouse.component.css']
 })
 export class ListhouseComponent implements OnInit {
+  imageList: any[];
+  rowIndexArray: any[];
 
-  constructor() { }
+  constructor(private service: ImageService) { }
 
-  ngOnInit(): void {
+  // tslint:disable-next-line:typedef
+  ngOnInit() {
+    this.service.imageDetailList.snapshotChanges().subscribe(
+      list => {
+        this.imageList = list.map(item => item.payload.val());
+        this.rowIndexArray =  Array.from(Array(Math.ceil((this.imageList.length + 1) / 3)).keys());
+      }
+    );
   }
-
 }
+

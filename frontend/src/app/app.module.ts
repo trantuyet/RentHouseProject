@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireStorageModule } from "@angular/fire/storage";
+import { AngularFireDatabaseModule } from "@angular/fire/database";
+import { environment} from "../environments/environment";
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
@@ -52,6 +56,9 @@ import { ListhouseComponent } from './house/listhouse/listhouse.component';
 import { RegisterComponent } from './user/register/register.component';
 import { ButtonComponent } from './user/button/button.component';
 import { ChangepasswordComponent } from './user/changepassword/changepassword.component';
+import { UpdateprofileComponent } from './user/updateprofile/updateprofile.component';
+import { AddhouseComponent } from './house/addhouse/addhouse.component';
+import { HouseComponent } from './house/house.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +69,9 @@ import { ChangepasswordComponent } from './user/changepassword/changepassword.co
     RegisterComponent,
     ButtonComponent,
     ChangepasswordComponent,
+    UpdateprofileComponent,
+    AddhouseComponent,
+    HouseComponent,
   ],
   imports: [
     ToastrModule.forRoot(),
@@ -110,7 +120,11 @@ import { ChangepasswordComponent } from './user/changepassword/changepassword.co
     OverlayModule,
     PortalModule,
     ScrollingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireStorageModule,
+    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+
   ],
   providers: [],
   bootstrap: [AppComponent]
