@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89fee8c2-0bf1-4ff5-ae9b-4d0da84df89d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/house/House.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/house/house.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/house/house.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/user/logout/logout.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/user/logout/logout.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/user/logout/logout.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/user/logout/logout.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rentHouse.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rentHouse.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/API/HouseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/API/HouseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/House.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/House.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/dashboard/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/dashboard/dashboard/dashboard.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/dashboard/dashboard/dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/dashboard/dashboard/dashboard.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/house/addhouse/addhouse.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/house/addhouse/addhouse.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/house/addhouse/addhouse.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/house/addhouse/addhouse.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/house/listhouse/listhouse.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/house/listhouse/listhouse.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/house/listhouse/listhouse.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/house/listhouse/listhouse.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/user/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/user/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/user/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.ts" afterDir="false" />
-    </list>
+    <list default="true" id="89fee8c2-0bf1-4ff5-ae9b-4d0da84df89d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,7 +191,7 @@
       <workItem from="1611541246756" duration="1431000" />
       <workItem from="1611542809101" duration="10719000" />
       <workItem from="1611568927541" duration="2309000" />
-      <workItem from="1611625203469" duration="3100000" />
+      <workItem from="1611625203469" duration="3647000" />
     </task>
     <servers />
   </component>
