@@ -54,6 +54,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { ListhouseComponent } from './house/listhouse/listhouse.component';
 import { RegisterComponent } from './user/register/register.component';
+import { ButtonComponent } from './user/button/button.component';
+import { ChangepasswordComponent } from './user/changepassword/changepassword.component';
 import { UpdateprofileComponent } from './user/updateprofile/updateprofile.component';
 import { AddhouseComponent } from './house/addhouse/addhouse.component';
 import { HouseComponent } from './house/house.component';
@@ -65,6 +67,8 @@ import { HouseComponent } from './house/house.component';
     DashboardComponent,
     ListhouseComponent,
     RegisterComponent,
+    ButtonComponent,
+    ChangepasswordComponent,
     UpdateprofileComponent,
     AddhouseComponent,
     HouseComponent,
