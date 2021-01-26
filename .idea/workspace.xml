@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89fee8c2-0bf1-4ff5-ae9b-4d0da84df89d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/database/seeders/UserSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/user/changepassword/changepassword.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/user/changepassword/changepassword.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/user/changepassword/changepassword.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/user/changepassword/changepassword.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/API/ChangePasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/API/ChangePasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/API/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/API/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Requests/ChangePasswordRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Requests/ChangePasswordRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/layout/change-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/layout/change-password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/user/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/user/User.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/user/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/user/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/user/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/user/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/user/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/user/changepassword/changepassword.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/user/changepassword/changepassword.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/user/changepassword/changepassword.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/user/changepassword/changepassword.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +196,7 @@
       <workItem from="1611571000202" duration="1520000" />
       <workItem from="1611625339481" duration="189000" />
       <workItem from="1611625588076" duration="11592000" />
-      <workItem from="1611643997630" duration="4183000" />
+      <workItem from="1611643997630" duration="6770000" />
     </task>
     <servers />
   </component>
