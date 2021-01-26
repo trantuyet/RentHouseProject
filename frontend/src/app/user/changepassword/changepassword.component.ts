@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {UserService} from "../user.service";
 import {NotificationService} from "../../notification.service";
-import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-changepassword',
@@ -19,7 +18,6 @@ export class ChangepasswordComponent implements OnInit {
   constructor(
     private userService: UserService,
     private notificationService: NotificationService,
-    private router : Router
 ) {
   }
 

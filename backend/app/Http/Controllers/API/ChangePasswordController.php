@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Hash;
 
 class ChangePasswordController extends Controller
 {
-    function changePassword(ChangePasswordRequest $request, $id): \Illuminate\Http\JsonResponse
+    function changePassword(ChangePasswordRequest $request, $id)
     {
         $user = User::find($id);
         $userPassword = $user->password;
