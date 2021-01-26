@@ -2,8 +2,7 @@
 <html>
 <head>
 
-  <!-- Basic Page Needs
-  ================================================== -->
+
   <title>Rent House Unlimited - Update Profile</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -16,14 +15,14 @@
 <div id="wrapper">
 
 
-  <!-- Compare Properties Widget
-  ================================================== -->
   <div class="compare-slide-menu">
 
     <div class="csm-trigger"></div>
 
     <div class="csm-content">
-      <h4>Compare Properties <div class="csm-mobile-trigger"></div></h4>
+      <h4>Compare Properties
+        <div class="csm-mobile-trigger"></div>
+      </h4>
 
       <div class="csm-properties">
 
@@ -81,8 +80,6 @@
   <!-- Compare Properties Widget / End -->
 
 
-  <!-- Header Container
-  ================================================== -->
   <header id="header-container">
 
     <!-- Topbar -->
@@ -94,13 +91,15 @@
 
           <!-- Top bar -->
           <ul class="top-bar-menu">
-            <li><i class="fa fa-phone"></i> (123) 123-456 </li>
+            <li><i class="fa fa-phone"></i> (123) 123-456</li>
             <li><i class="fa fa-envelope"></i> <a href="#">office@example.com</a></li>
             <li>
               <div class="top-bar-dropdown">
                 <span>Dropdown Menu</span>
                 <ul class="options">
-                  <li><div class="arrow"></div></li>
+                  <li>
+                    <div class="arrow"></div>
+                  </li>
                   <li><a href="#">Nice First Link</a></li>
                   <li><a href="#">Second Link With Long Title</a></li>
                   <li><a href="#">Third Link</a></li>
@@ -264,9 +263,6 @@
   <!-- Header Container / End -->
 
 
-
-  <!-- Titlebar
-  ================================================== -->
   <div id="titlebar">
     <div class="container">
       <div class="row">
@@ -288,8 +284,6 @@
   </div>
 
 
-  <!-- Content
-  ================================================== -->
   <div class="container">
     <div class="row">
 
@@ -330,17 +324,32 @@
             <h4 class="margin-top-0 margin-bottom-30">Cập nhật tài khoản</h4>
 
             <label>Họ Và Tên </label>
-            <input value="Jennie Wilson" type="text">
-
+            <input matInput [(ngModel)]="name" name="name" class="form-control" required type="text" #names='ngModel'
+                   [class.is-invalid]="names.invalid && names.touched" placeholder="Nhập name">
+            <div *ngIf="names.errors && (names.valid || names.touched)">
+              <small class="text-danger" *ngIf="names.errors.required">Họ và tên không được để trống</small>
+            </div>
             <label>Địa Chỉ </label>
-            <input value="Agent In New York" type="text">
-
+            <input matInput [(ngModel)]="address" name="address" class="form-control" required type="text"
+                   #addresss='ngModel'
+                   [class.is-invalid]="addresss.invalid && addresss.touched" placeholder="Nhập name">
+            <div *ngIf="addresss.errors && (addresss.valid || addresss.touched)">
+              <small class="text-danger" *ngIf="addresss.errors.required">Địa chỉ không được để trống</small>
+            </div>
             <label>Số Điện Thoại</label>
-            <input value="(123) 123-456" type="text">
-
+            <input matInput [(ngModel)]="phone" [minLength]="10" [maxLength]="10" name="address" class="form-control"
+                   required type="number" #phones='ngModel' [class.is-invalid]="phones.invalid && phones.touched"
+                   placeholder="Nhập số điện thoại ">
+            <div *ngIf="phones.errors && (phones.valid || phones.touched)">
+              <small class="text-danger" *ngIf="phones.errors.required">Số điện thoại không được để trống </small>
+            </div>
             <label>Email</label>
-            <input value="jennie@example.com" type="text">
-
+            <input matInput [(ngModel)]="email" name="email" class="form-control" required email type="text"
+                   #emails='ngModel' [class.is-invalid]="emails.invalid && emails.touched" placeholder="Nhập email">
+            <div *ngIf="emails.errors && (emails.valid || emails.touched)">
+              <small class="text-danger" *ngIf="emails.errors.required">Email không được để trống</small>
+              <small class="text-danger" *ngIf="emails.errors.email">Email phải nhập đúng định dạng</small>
+            </div>
             <button class="button margin-top-20 margin-bottom-20">Save Changes</button>
           </div>
 
@@ -351,7 +360,7 @@
               <div class="change-photo-btn">
                 <div class="photoUpload">
                   <span><i class="fa fa-upload"></i> Upload Photo</span>
-                  <input type="file" class="upload" />
+                  <input type="file" class="upload"/>
                 </div>
               </div>
             </div>
@@ -364,8 +373,6 @@
   </div>
 
 
-  <!-- Footer
-  ================================================== -->
   <div class="margin-top-55"></div>
 
   <div id="footer" class="sticky-footer">
@@ -375,7 +382,8 @@
         <div class="col-md-5 col-sm-6">
           <img class="footer-logo" src="images/logo.png" alt="">
           <br><br>
-          <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
+          <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia
+            tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
         </div>
 
         <div class="col-md-4 col-sm-6 ">
@@ -446,9 +454,6 @@
   <script type="text/javascript" src="src/assets/scripts/mmenu.min.js"></script>
   <script type="text/javascript" src="src/assets/scripts/tooltips.min.js"></script>
   <script type="text/javascript" src="src/assets/scripts/custom.js"></script>
-
-
-
 
 
 </div>

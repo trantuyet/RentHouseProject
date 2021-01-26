@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-updateprofile',
@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./updateprofile.component.css']
 })
 export class UpdateprofileComponent implements OnInit {
-
-  constructor() { }
+  name!: string;
+  email!: string;
+  address!: string;
+  phone!: number;
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
