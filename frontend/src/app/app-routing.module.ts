@@ -7,6 +7,7 @@ import {RegisterComponent} from './user/register/register.component';
 import {UpdateprofileComponent} from './user/updateprofile/updateprofile.component';
 import {AddhouseComponent} from "./house/addhouse/addhouse.component";
 import {HouseComponent} from "./house/house.component";
+import {DashboarduserComponent} from './user/dashboarduser/dashboarduser.component';
 
 const routes: Routes = [
 
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent
+  },
+  {
+    path: 'dashboarduser',
+    component: DashboarduserComponent
   },
   {
     path: '', redirectTo: 'dashboard', pathMatch: 'full'

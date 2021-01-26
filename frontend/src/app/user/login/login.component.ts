@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
         // console.log(data);
         this.showToasterSuccess();
         localStorage.setItem('auth_token', data.token);
-        this.router.navigate(['/dashboard']);
+        this.router.navigate(['/dashboarduser']);
       }, error => this.showToasterError());
   }
 

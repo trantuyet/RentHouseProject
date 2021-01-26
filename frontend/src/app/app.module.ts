@@ -57,6 +57,7 @@ import { RegisterComponent } from './user/register/register.component';
 import { UpdateprofileComponent } from './user/updateprofile/updateprofile.component';
 import { AddhouseComponent } from './house/addhouse/addhouse.component';
 import { HouseComponent } from './house/house.component';
+import { DashboarduserComponent } from './user/dashboarduser/dashboarduser.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { HouseComponent } from './house/house.component';
     UpdateprofileComponent,
     AddhouseComponent,
     HouseComponent,
+    DashboarduserComponent,
   ],
   imports: [
     ToastrModule.forRoot(),

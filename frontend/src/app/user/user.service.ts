@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Observable} from "rxjs";
+// import {environment} from "../../environments/environment";
+// import {IUser} from "./IUser";
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +21,4 @@ export class UserService {
     };
     return this.http.post(`http://127.0.0.1:8000/api/login`, data, {headers: reqHeader, responseType: 'json'});
   }
-
-  // updateprofile(avatar: string, fullname:string, address:string, phone:number, email: string)
-
 }
