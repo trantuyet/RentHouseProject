@@ -52,6 +52,7 @@ import { ListhouseComponent } from './house/listhouse/listhouse.component';
 import { RegisterComponent } from './user/register/register.component';
 import { ButtonComponent } from './user/button/button.component';
 import { AddhouseComponent } from './house/addhouse/addhouse.component';
+import { LogoutComponent } from './user/logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { AddhouseComponent } from './house/addhouse/addhouse.component';
     RegisterComponent,
     ButtonComponent,
     AddhouseComponent,
+    LogoutComponent,
   ],
   imports: [
     ToastrModule.forRoot(),

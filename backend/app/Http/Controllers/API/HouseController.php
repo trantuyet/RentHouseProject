@@ -3,54 +3,42 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-<<<<<<< HEAD
 use Illuminate\Http\RedirectResponse;
-=======
 use App\Http\Requests\AddHouseRequest;
 use App\Http\Requests\UpdateHouseRequest;
 use App\Models\House;
->>>>>>> 424a4fa5b01cc49f61d9480730b03cfb7dbca27d
 use Illuminate\Http\Request;
-use App\Models\House;
-
 class HouseController extends Controller
 {
-<<<<<<< HEAD
-    public function index() {
-=======
-    function index()
+    public function index()
     {
->>>>>>> 424a4fa5b01cc49f61d9480730b03cfb7dbca27d
-        $house = House::all();
-        return response()->json($house, 200);
+        function index()
+        {
+            $house = House::all();
+            return response()->json($house, 200);
+        }
     }
 
-<<<<<<< HEAD
-    public function create(Request $request): \Illuminate\Http\JsonResponse
-=======
+
     public function store(AddHouseRequest $request)
->>>>>>> 424a4fa5b01cc49f61d9480730b03cfb7dbca27d
     {
         $house = new House();
         $house->fill($request->all());
         $house->save();
-<<<<<<< HEAD
-        $response =[
+        $response = [
             'status' => 'success',
             'message' => 'Add new post successful!'
         ];
 
 
-
-
         return response()->json($response);
-=======
         $statusCode = 201;
         if (!$house)
             $statusCode = 404;
         return response($house, $statusCode);
 
     }
+
 
     public function show($id)
     {
@@ -90,6 +78,6 @@ class HouseController extends Controller
             'error' => false,
             'message' => "Customer record successfully deleted id # $id",
         ], 200);
->>>>>>> 424a4fa5b01cc49f61d9480730b03cfb7dbca27d
     }
+
 }

@@ -6,6 +6,9 @@ import {Observable} from "rxjs";
   providedIn: 'root'
 })
 export class UserService {
+  private EMAIL_SESSION_ATTRIBUTE_NAME: string;
+  private email: null;
+  private password: null;
 
   constructor(private http:HttpClient) {
   }
@@ -22,4 +25,9 @@ export class UserService {
 
   // updateprofile(avatar: string, fullname:string, address:string, phone:number, email: string)
 
+  logout() {
+    sessionStorage.removeItem(this.EMAIL_SESSION_ATTRIBUTE_NAME);
+    this.email = null;
+    this.password = null;
+  }
 }

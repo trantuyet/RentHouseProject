@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-listhouse',
   templateUrl: './listhouse.component.html',
-  styleUrls: ['./listhouse.component.css']
+  styles: ['listhouse.component.css']
 })
 export class ListhouseComponent implements OnInit {
 
@@ -13,3 +13,4 @@ export class ListhouseComponent implements OnInit {
   }
 
 }
+

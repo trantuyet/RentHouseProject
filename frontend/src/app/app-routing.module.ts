@@ -4,6 +4,8 @@ import {DashboardComponent} from './dashboard/dashboard/dashboard.component';
 import {LoginComponent} from "./user/login/login.component";
 import {ListhouseComponent} from './house/listhouse/listhouse.component';
 import {RegisterComponent} from './user/register/register.component'
+import {AddhouseComponent} from "./house/addhouse/addhouse.component";
+import {LogoutComponent} from "./user/logout/logout.component";
 const routes: Routes = [
 
   {
@@ -25,7 +27,15 @@ const routes: Routes = [
   {
     path: 'listhouse',
     component: ListhouseComponent
-  }
+  },
+  {
+    path: 'addhouse',
+    component: AddhouseComponent
+  },
+  { path: 'dashboard/logout',
+    component: LogoutComponent
+  },
+
 
 ];
 

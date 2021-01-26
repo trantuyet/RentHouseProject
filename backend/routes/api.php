@@ -4,7 +4,6 @@ use App\Http\Controllers\API\HouseController;
 use App\Http\Controllers\API\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\API\HouseController;
 use Illuminate\Routing\Router;
 
 /*
@@ -27,10 +26,8 @@ Route::post('login', [UserController::class, 'login']);
 Route::get('users', [UserController::class, 'index']);
 
 Route::group(['middleware' => 'auth.jwt'], function () {
-<<<<<<< HEAD
     Route::get('users', [UserController::class, 'index']);
     Route::get('house',[HouseController::class,'index']);
-=======
      });
 Route::prefix('house')->group(function () {
     Route::get('/', [HouseController::class, 'index']);
@@ -38,11 +35,8 @@ Route::prefix('house')->group(function () {
     Route::post('/', [HouseController::class, 'store']);
     Route::put('/{id}', [HouseController::class, 'update']);
     Route::delete('/{id}', [HouseController::class, 'destroy']);
->>>>>>> 424a4fa5b01cc49f61d9480730b03cfb7dbca27d
 });
-//Route::prefix('post')->group(function (Request $request) {
-//    Route::post('/create', [HouseController::class, 'create']);
-//});
+
 
 
 

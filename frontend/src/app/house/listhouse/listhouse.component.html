@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE> <html>
 <head>
+
   <!-- Basic Page Needs
   ================================================== -->
   <title>Findeo</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+  ================================================== -->
+<!--  <link rel="stylesheet" href="css/style.css">-->
+<!--  <link rel="stylesheet" href="css/color.css">-->
 
 </head>
 
@@ -34,7 +39,7 @@
               <span>For Sale</span>
             </div>
             <div class="listing-img-content">
-              <span class="listing-compact-title">Eagle Apartments <i>$420,000</i></span>
+              <span class="listing-compact-title">Eagle Apartments <i></i></span>
             </div>
             <img src="images/listing-01.jpg" alt="">
           </a>
@@ -93,8 +98,8 @@
 
           <!-- Top bar -->
           <ul class="top-bar-menu">
-            <li><i class="fa fa-phone"></i> (123) 123-456 </li>
-            <li><i class="fa fa-envelope"></i> <a href="#">office@example.com</a></li>
+            <li><i class="fa fa-phone"></i> 0326279089 </li>
+            <li><i class="fa fa-envelope"></i> <a href="#">fightforfreedom@gmail.com</a></li>
             <li>
               <div class="top-bar-dropdown">
                 <span>Dropdown Menu</span>
@@ -159,14 +164,7 @@
           <nav id="navigation" class="style-1">
             <ul id="responsive">
 
-              <li><a href="#">Home</a>
-                <ul>
-                  <li><a href="index.html">Home 1</a></li>
-                  <li><a href="index-2.html">Home 2</a></li>
-                  <li><a href="index-3.html">Home 3</a></li>
-                  <li><a href="index-4.html">Home 4</a></li>
-                </ul>
-              </li>
+                  <li><a href="index.html">Home</a></li>
 
               <li><a class="current" href="#">Listings</a>
                 <ul>
@@ -280,51 +278,266 @@
 
 
 
-  <!-- Titlebar
+  <!-- Search
   ================================================== -->
-  <div class="parallax titlebar"
-       data-background="images/listings-parallax.jpg"
-       data-color="#333333"
-       data-color-opacity="0.7"
-       data-img-width="800"
-       data-img-height="505">
+  <section class="search margin-bottom-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
 
-    <div id="titlebar">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
+          <!-- Title -->
+          <h3 class="search-title">Search</h3>
 
-            <h2>Listings</h2>
-            <span>Grid Layout With Sidebar</span>
+          <!-- Form -->
+          <div class="main-search-box no-shadow">
 
-            <!-- Breadcrumbs -->
-            <nav id="breadcrumbs">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li>Listings</li>
-              </ul>
-            </nav>
+
+            <!-- Row With Forms -->
+            <div class="row with-forms">
+
+              <!-- Status -->
+              <div class="col-md-3">
+                <select data-placeholder="Trạng thái" class="chosen-select-no-single" >
+                  <option>Tất cả </option>
+                  <option>Đang cho thuê </option>
+                  <option>Đã có người thuê </option>
+                </select>
+              </div>
+
+              <!-- Property Type -->
+              <div class="col-md-3">
+                <select data-placeholder="Loại Phòng" class="chosen-select-no-single" >
+                  <option>Tất cả </option>
+                  <option>Phòng Đơn</option>
+                  <option>Phòng Đôi </option>
+                  <option>Phòng Tổng Thống </option>
+                  <option>Phòng VIP </option>
+                  <option>Phòng LUXURY </option>
+                </select>
+              </div>
+
+              <!-- Main Search Input -->
+              <div class="col-md-6">
+                <div class="main-search-input">
+                  <input type="text" placeholder="Enter address e.g. street, city or state" value=""/>
+                  <button class="button">Search</button>
+                </div>
+              </div>
+
+            </div>
+            <!-- Row With Forms / End -->
+
+
+            <!-- Row With Forms -->
+            <div class="row with-forms">
+
+              <!-- Min Price -->
+              <div class="col-md-3">
+
+                <!-- Select Input -->
+                <div class="select-input disabled-first-option">
+                  <input type="text" placeholder="Min Area" data-unit="Sq Ft">
+                  <select>
+                    <option>Số phòng ngủ từ: </option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                  </select>
+                </div>
+                <!-- Select Input / End -->
+
+              </div>
+
+              <!-- Max Price -->
+              <div class="col-md-3">
+
+                <!-- Select Input -->
+                <div class="select-input disabled-first-option">
+                  <input type="text" placeholder="Max Area" data-unit="Sq Ft">
+                  <select>
+                    <option>Đến: </option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                  </select>
+                </div>
+                <!-- Select Input / End -->
+
+              </div>
+
+
+              <!-- Min Price -->
+              <div class="col-md-3">
+
+                <!-- Select Input -->
+                <div class="select-input disabled-first-option">
+                  <input type="text" placeholder="Min Price" data-unit="USD">
+                  <select>
+                    <option>Giá từ: </option>
+                    <option>1 000</option>
+                    <option>2 000</option>
+                    <option>3 000</option>
+                    <option>4 000</option>
+                    <option>5 000</option>
+                    <option>10 000</option>
+                    <option>15 000</option>
+                    <option>20 000</option>
+                    <option>30 000</option>
+                    <option>40 000</option>
+                    <option>50 000</option>
+                    <option>60 000</option>
+                    <option>70 000</option>
+                    <option>80 000</option>
+                    <option>90 000</option>
+                    <option>100 000</option>
+                    <option>110 000</option>
+                    <option>120 000</option>
+                    <option>130 000</option>
+                    <option>140 000</option>
+                    <option>150 000</option>
+                  </select>
+                </div>
+                <!-- Select Input / End -->
+
+              </div>
+
+
+              <!-- Max Price -->
+              <div class="col-md-3">
+
+                <!-- Select Input -->
+                <div class="select-input disabled-first-option">
+                  <input type="text" placeholder="Max Price" data-unit="USD">
+                  <select>
+                    <option>Đến </option>
+                    <option>2 000</option>
+                    <option>3 000</option>
+                    <option>4 000</option>
+                    <option>5 000</option>
+                    <option>10 000</option>
+                    <option>15 000</option>
+                    <option>20 000</option>
+                    <option>30 000</option>
+                    <option>40 000</option>
+                    <option>50 000</option>
+                    <option>60 000</option>
+                    <option>70 000</option>
+                    <option>80 000</option>
+                    <option>90 000</option>
+                    <option>100 000</option>
+                    <option>110 000</option>
+                    <option>120 000</option>
+                    <option>130 000</option>
+                    <option>140 000</option>
+                    <option>150 000</option>
+                  </select>
+                </div>
+                <!-- Select Input / End -->
+
+              </div>
+
+            </div>
+            <!-- Row With Forms / End -->
+
+
+            <!-- More Search Options -->
+            <a href="#" class="more-search-options-trigger margin-top-10" data-open-title="More Options" data-close-title="Less Options"></a>
+
+            <div class="more-search-options relative">
+              <div class="more-search-options-container">
+
+                <!-- Row With Forms -->
+                <div class="row with-forms">
+
+                  <!-- Age of Home -->
+                  <div class="col-md-3">
+                    <select data-placeholder="Tuổi của nhà " class="chosen-select-no-single" >
+                      <option label="blank"></option>
+                      <option>Tất cả </option>
+                      <option>0 - 1 năm</option>
+                      <option>0 - 5 năm</option>
+                      <option>0 - 10 năm</option>
+                      <option>0 - 20 năm</option>
+                      <option>0 - 50 năm</option>
+                      <option>Hơn 50 năm</option>
+                    </select>
+                  </div>
+
+                  <!-- Rooms Area -->
+
+
+                  <!-- Min Area -->
+
+                  <!-- Max Area -->
+
+
+                </div>
+                <!-- Row With Forms / End -->
+
+
+                <!-- Checkboxes -->
+                <div class="checkboxes in-row">
+
+                  <input id="check-2" type="checkbox" name="check">
+                  <label for="check-2">Air Conditioning</label>
+
+                  <input id="check-3" type="checkbox" name="check">
+                  <label for="check-3">Swimming Pool</label>
+
+                  <input id="check-4" type="checkbox" name="check" >
+                  <label for="check-4">Central Heating</label>
+
+                  <input id="check-5" type="checkbox" name="check">
+                  <label for="check-5">Laundry Room</label>
+
+
+                  <input id="check-6" type="checkbox" name="check">
+                  <label for="check-6">Gym</label>
+
+                  <input id="check-7" type="checkbox" name="check">
+                  <label for="check-7">Alarm</label>
+
+                  <input id="check-8" type="checkbox" name="check">
+                  <label for="check-8">Window Covering</label>
+
+                </div>
+                <!-- Checkboxes / End -->
+
+              </div>
+
+            </div>
+            <!-- More Search Options / End -->
+
 
           </div>
+          <!-- Box / End -->
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
 
 
   <!-- Content
   ================================================== -->
   <div class="container">
-    <div class="row sticky-wrapper">
+    <div class="row fullwidth-layout">
 
-      <div class="col-md-8">
-
-        <!-- Main Search Input -->
-        <div class="main-search-input margin-bottom-35">
-          <input type="text" class="ico-01" placeholder="Enter address e.g. street, city and state or zip" value=""/>
-          <button class="button">Search</button>
-        </div>
+      <div class="col-md-12">
 
         <!-- Sorting / Layout Switcher -->
         <div class="row margin-bottom-15">
@@ -349,15 +562,16 @@
           <div class="col-md-6">
             <!-- Layout Switcher -->
             <div class="layout-switcher">
-              <a href="#" class="grid"><i class="fa fa-th-large"></i></a>
               <a href="#" class="list"><i class="fa fa-th-list"></i></a>
+              <a href="#" class="grid"><i class="fa fa-th-large"></i></a>
+              <a href="#" class="grid-three"><i class="fa fa-th"></i></a>
             </div>
           </div>
         </div>
 
 
         <!-- Listings -->
-        <div class="listings-container grid-layout">
+        <div class="listings-container list-layout">
 
           <!-- Listing Item -->
           <div class="listing-item">
@@ -385,7 +599,7 @@
             <div class="listing-content">
 
               <div class="listing-title">
-                <h4><a href="#">Eagle Apartments</a></h4>
+                <h4><a href="single-property-page-1.html">Eagle Apartments</a></h4>
                 <a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&hl=en&t=v&hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom" class="listing-address popup-gmaps">
                   <i class="fa fa-map-marker"></i>
                   9364 School St. Lynchburg, NY
@@ -585,7 +799,7 @@
             <div class="listing-content">
 
               <div class="listing-title">
-                <h4><a href="single-property-page-1.html">Oak Tree Villas</a></h4>
+                <h4><a href="#">Oak Tree Villas</a></h4>
                 <a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&hl=en&t=v&hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom" class="listing-address popup-gmaps">
                   <i class="fa fa-map-marker"></i>
                   71 Lower River Dr. Bronx, NY
@@ -662,7 +876,7 @@
         </div>
         <!-- Listings Container / End -->
 
-
+        <div class="clearfix"></div>
         <!-- Pagination -->
         <div class="pagination-container margin-top-20">
           <nav class="pagination">
@@ -686,232 +900,6 @@
 
       </div>
 
-
-      <!-- Sidebar
-      ================================================== -->
-      <div class="col-md-4">
-        <div class="sidebar sticky right">
-
-          <!-- Widget -->
-          <div class="widget margin-bottom-40">
-            <h3 class="margin-top-0 margin-bottom-35">Find New Home</h3>
-
-            <!-- Row -->
-            <div class="row with-forms">
-              <!-- Status -->
-              <div class="col-md-12">
-                <select data-placeholder="Any Status" class="chosen-select-no-single" >
-                  <option>Any Status</option>
-                  <option>For Sale</option>
-                  <option>For Rent</option>
-                </select>
-              </div>
-            </div>
-            <!-- Row / End -->
-
-
-            <!-- Row -->
-            <div class="row with-forms">
-              <!-- Type -->
-              <div class="col-md-12">
-                <select data-placeholder="Any Type" class="chosen-select-no-single" >
-                  <option>Any Type</option>
-                  <option>Apartments</option>
-                  <option>Houses</option>
-                  <option>Commercial</option>
-                  <option>Garages</option>
-                  <option>Lots</option>
-                </select>
-              </div>
-            </div>
-            <!-- Row / End -->
-
-
-            <!-- Row -->
-            <div class="row with-forms">
-              <!-- States -->
-              <div class="col-md-12">
-                <select data-placeholder="All States" class="chosen-select" >
-                  <option>All States</option>
-                  <option>Alabama</option>
-                  <option>Alaska</option>
-                  <option>Arizona</option>
-                  <option>Arkansas</option>
-                  <option>California</option>
-                  <option>Colorado</option>
-                  <option>Connecticut</option>
-                  <option>Delaware</option>
-                  <option>Florida</option>
-                  <option>Georgia</option>
-                  <option>Hawaii</option>
-                  <option>Idaho</option>
-                  <option>Illinois</option>
-                  <option>Indiana</option>
-                  <option>Iowa</option>
-                  <option>Kansas</option>
-                  <option>Kentucky</option>
-                  <option>Louisiana</option>
-                  <option>Maine</option>
-                  <option>Maryland</option>
-                  <option>Massachusetts</option>
-                  <option>Michigan</option>
-                  <option>Minnesota</option>
-                  <option>Mississippi</option>
-                  <option>Missouri</option>
-                  <option>Montana</option>
-                  <option>Nebraska</option>
-                  <option>Nevada</option>
-                  <option>New Hampshire</option>
-                  <option>New Jersey</option>
-                  <option>New Mexico</option>
-                  <option>New York</option>
-                  <option>North Carolina</option>
-                  <option>North Dakota</option>
-                  <option>Ohio</option>
-                  <option>Oklahoma</option>
-                  <option>Oregon</option>
-                  <option>Pennsylvania</option>
-                  <option>Rhode Island</option>
-                  <option>South Carolina</option>
-                  <option>South Dakota</option>
-                  <option>Tennessee</option>
-                  <option>Texas</option>
-                  <option>Utah</option>
-                  <option>Vermont</option>
-                  <option>Virginia</option>
-                  <option>Washington</option>
-                  <option>West Virginia</option>
-                  <option>Wisconsin</option>
-                  <option>Wyoming</option>
-                </select>
-              </div>
-            </div>
-            <!-- Row / End -->
-
-
-            <!-- Row -->
-            <div class="row with-forms">
-              <!-- Cities -->
-              <div class="col-md-12">
-                <select data-placeholder="All Cities" class="chosen-select" >
-                  <option>All Cities</option>
-                  <option>New York</option>
-                  <option>Los Angeles</option>
-                  <option>Chicago</option>
-                  <option>Brooklyn</option>
-                  <option>Queens</option>
-                  <option>Houston</option>
-                  <option>Manhattan</option>
-                  <option>Philadelphia</option>
-                  <option>Phoenix</option>
-                  <option>San Antonio</option>
-                  <option>Bronx</option>
-                  <option>San Diego</option>
-                  <option>Dallas</option>
-                  <option>San Jose</option>
-                </select>
-              </div>
-            </div>
-            <!-- Row / End -->
-
-
-            <!-- Row -->
-            <div class="row with-forms">
-
-              <!-- Min Area -->
-              <div class="col-md-6">
-                <select data-placeholder="Beds" class="chosen-select-no-single" >
-                  <option label="blank"></option>
-                  <option>Beds (Any)</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-
-              <!-- Max Area -->
-              <div class="col-md-6">
-                <select data-placeholder="Baths" class="chosen-select-no-single" >
-                  <option label="blank"></option>
-                  <option>Baths (Any)</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-
-            </div>
-            <!-- Row / End -->
-
-            <br>
-
-            <!-- Area Range -->
-            <div class="range-slider">
-              <label>Area Range</label>
-              <div id="area-range" data-min="0" data-max="1500" data-unit="sq ft"></div>
-              <div class="clearfix"></div>
-            </div>
-
-            <br>
-
-            <!-- Price Range -->
-            <div class="range-slider">
-              <label>Price Range</label>
-              <div id="price-range" data-min="0" data-max="400000" data-unit="$"></div>
-              <div class="clearfix"></div>
-            </div>
-
-
-
-            <!-- More Search Options -->
-            <a href="#" class="more-search-options-trigger margin-bottom-10 margin-top-30" data-open-title="Additional Features" data-close-title="Additional Features"></a>
-
-            <div class="more-search-options relative">
-
-              <!-- Checkboxes -->
-              <div class="checkboxes one-in-row margin-bottom-10">
-
-                <input id="check-2" type="checkbox" name="check">
-                <label for="check-2">Air Conditioning</label>
-
-                <input id="check-3" type="checkbox" name="check">
-                <label for="check-3">Swimming Pool</label>
-
-                <input id="check-4" type="checkbox" name="check" >
-                <label for="check-4">Central Heating</label>
-
-                <input id="check-5" type="checkbox" name="check">
-                <label for="check-5">Laundry Room</label>
-
-
-                <input id="check-6" type="checkbox" name="check">
-                <label for="check-6">Gym</label>
-
-                <input id="check-7" type="checkbox" name="check">
-                <label for="check-7">Alarm</label>
-
-                <input id="check-8" type="checkbox" name="check">
-                <label for="check-8">Window Covering</label>
-
-              </div>
-              <!-- Checkboxes / End -->
-
-            </div>
-            <!-- More Search Options / End -->
-
-            <button class="button fullwidth margin-top-30">Search</button>
-
-
-          </div>
-          <!-- Widget / End -->
-
-        </div>
-      </div>
-      <!-- Sidebar / End -->
     </div>
   </div>
 
@@ -989,18 +977,18 @@
 
   <!-- Scripts
   ================================================== -->
-  <script type="text/javascript" src="src/assets/scripts/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="src/assets/scripts/jquery-migrate-3.1.0.min.js"></script>
-  <script type="text/javascript" src="src/assets/scripts/chosen.min.js"></script>
-  <script type="text/javascript" src="src/assets/scripts/magnific-popup.min.js"></script>
-  <script type="text/javascript" src="src/assets/scripts/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="src/assets/scripts/rangeSlider.js"></script>
-  <script type="text/javascript" src="src/assets/scripts/sticky-kit.min.js"></script>
-  <script type="text/javascript" src="src/assets/scripts/slick.min.js"></script>
-  <script type="text/javascript" src="src/assets/scripts/mmenu.min.js"></script>
-  <script type="text/javascript" src="src/assets/scripts/tooltips.min.js"></script>
-  <script type="text/javascript" src="src/assets/scripts/masonry.min.js"></script>
-  <script type="text/javascript" src="src/assets/scripts/custom.js"></script>
+  <script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery-migrate-3.1.0.min.js"></script>
+  <script type="text/javascript" src="scripts/chosen.min.js"></script>
+  <script type="text/javascript" src="scripts/magnific-popup.min.js"></script>
+  <script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="scripts/rangeSlider.js"></script>
+  <script type="text/javascript" src="scripts/sticky-kit.min.js"></script>
+  <script type="text/javascript" src="scripts/slick.min.js"></script>
+  <script type="text/javascript" src="scripts/mmenu.min.js"></script>
+  <script type="text/javascript" src="scripts/tooltips.min.js"></script>
+  <script type="text/javascript" src="scripts/masonry.min.js"></script>
+  <script type="text/javascript" src="scripts/custom.js"></script>
 
 
 
