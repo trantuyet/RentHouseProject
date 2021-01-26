@@ -23,7 +23,7 @@ const routes: Routes = [
     component: RegisterComponent
   },
   {
-    path: 'dashboard/changepassword',
+    path: 'dashboarduser/changepassword',
     component: ChangepasswordComponent},
   {
     path: 'updateprofile',
