@@ -111,17 +111,8 @@
       <path value="$PROJECT_DIR$/backend/vendor/tymon/jwt-auth" />
       <path value="$PROJECT_DIR$/backend/vendor/namshi/jose" />
       <path value="$PROJECT_DIR$/backend/vendor/lcobucci/jwt" />
-<<<<<<< HEAD
-=======
-      <path value="$PROJECT_DIR$/backend/vendor/league/oauth1-client" />
       <path value="$PROJECT_DIR$/backend/vendor/laravel/socialite" />
->>>>>>> dc5908f835b4ab3689d20769e1dcc14bdf76b493
+      <path value="$PROJECT_DIR$/backend/vendor/league/oauth1-client" />
     </include_path>
-  </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />
-  <component name="PhpUnit">
-    <phpunit_settings>
-      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/backend/vendor/autoload.php" />
-    </phpunit_settings>
   </component>
 </project>

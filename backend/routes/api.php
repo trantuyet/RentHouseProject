@@ -4,6 +4,7 @@ use App\Http\Controllers\API\HouseController;
 use App\Http\Controllers\API\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\ChangePasswordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,10 +23,14 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/users', [UserController::class, 'index']);
 Route::post('login', [UserController::class, 'login']);
+Route::post('register',[UserController::class,'register']);
+
 Route::get('users', [UserController::class, 'index']);
 
 Route::group(['middleware' => 'auth.jwt'], function () {
-     });
+    Route::put('changePassword/{id}', [ChangePasswordController::class, 'changePassword']);
+
+});
 Route::prefix('house')->group(function () {
     Route::get('/', [HouseController::class, 'index']);
     Route::get('/{id}', [HouseController::class, 'show']);
