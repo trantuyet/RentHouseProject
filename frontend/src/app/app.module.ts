@@ -74,7 +74,11 @@ import { DashboarduserComponent } from './user/dashboarduser/dashboarduser.compo
     DashboarduserComponent,
   ],
   imports: [
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot({
+      timeOut: 1000,
+      progressBar: true,
+      progressAnimation: 'increasing'
+    }),
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,

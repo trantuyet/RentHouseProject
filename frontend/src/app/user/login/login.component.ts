@@ -2,8 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Observable} from "rxjs";
 import {UserService} from "../user.service";
 import {Router} from "@angular/router";
-import { NotificationService } from 'src/app/notification.service';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {ToastrService} from "ngx-toastr";
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -19,7 +18,8 @@ export class LoginComponent implements OnInit {
 
   constructor(private userService: UserService,
               private router: Router,
-              private notificationService: NotificationService) {
+              private toastr: ToastrService
+  ) {
   }
 
   ngOnInit(): void {
@@ -30,10 +30,10 @@ export class LoginComponent implements OnInit {
     this.userService.login(this.email, this.password).subscribe(
       data => {
         // console.log(data);
-        this.showToasterSuccess();
+        this.toastr.success("Đăng nhập thành công");
         localStorage.setItem('auth_token', data.token);
         this.router.navigate(['/dashboarduser']);
-      }, error => this.showToasterError());
+      }, error => this.toastr.error("Đăng nhập thất bại"));
   }
 
   // tslint:disable-next-line:typedef
@@ -42,19 +42,19 @@ export class LoginComponent implements OnInit {
     this.login();
   }
   // tslint:disable-next-line:typedef
-  showToasterSuccess() {
-    this.notificationService.showSuccess(
-      'Đăng nhập thành công !!',
-      'Thông báo'
-    );
-  }
-
-  // tslint:disable-next-line:typedef
-  showToasterError() {
-    this.notificationService.showError(
-      'Đăng nhập thất bại Tài khoản hoặc mật khẩu không đúng !!',
-      'thông báo'
-    );
-  }
+  // showToasterSuccess() {
+  //   this.notificationService.showSuccess(
+  //     'Đăng nhập thành công !!',
+  //     'Thông báo'
+  //   );
+  // }
+  //
+  // // tslint:disable-next-line:typedef
+  // showToasterError() {
+  //   this.notificationService.showError(
+  //     'Đăng nhập thất bại Tài khoản hoặc mật khẩu không đúng !!',
+  //     'thông báo'
+  //   );
+  // }
 
 }
