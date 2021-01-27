@@ -1,8 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import {NotificationService} from "../../notification.service";
+
 import {UserService} from "../user.service";
 import {User} from "../User";
 import {Router} from "@angular/router";
+import {ToastrService} from "ngx-toastr";
 
 
 @Component({
@@ -23,8 +24,8 @@ export class RegisterComponent implements OnInit {
 
 
   constructor(private userService: UserService,
-              private notificationService: NotificationService,
-              private router: Router,) {
+              private router: Router,
+              private toastr: ToastrService) {
   }
 
   ngOnInit(): void {
@@ -46,12 +47,12 @@ export class RegisterComponent implements OnInit {
           'password': this.userPassword,
         })
         .subscribe(data => {
-          this.showToasterSuccess();
+          this.toastr.success("Đăng kí thành công")
           this.router.navigate(['login']);
 
-        }, error => this.showToasterError());
+        }, error => this.toastr.error("Đăng kí thất bại"));
     } else {
-      this.showToasterError1();
+      this.toastr.error("Xác nhận mật khẩu không đúng");
     }
 
   }
@@ -61,23 +62,23 @@ export class RegisterComponent implements OnInit {
     this.register();
   }
 
-  showToasterSuccess() {
-    this.notificationService.showSuccess('Đăng ký thành công.', 'Thông báo !');
-  }
+  // showToasterSuccess() {
+  //   this.notificationService.showSuccess('Đăng ký thành công.', 'Thông báo !');
+  // }
 
-  showToasterError() {
-    this.notificationService.showError(
-      'Đăng ký thất bại',
-      'email của quý khách đã có người sử dụng'
-    );
-  }
+  // showToasterError() {
+  //   this.notificationService.showError(
+  //     'Đăng ký thất bại',
+  //     'email của quý khách đã có người sử dụng'
+  //   );
+  // }
 
-  showToasterError1() {
-    this.notificationService.showError(
-      'Xác nhận mật khẩu không đúng.Vui lòng nhập lại',
-      'Thông báo'
-    )
-
-  }
+  // showToasterError1() {
+  //   this.notificationService.showError(
+  //     'Xác nhận mật khẩu không đúng.Vui lòng nhập lại',
+  //     'Thông báo'
+  //   )
+  //
+  // }
 
 }

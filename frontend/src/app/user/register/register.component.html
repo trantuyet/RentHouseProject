@@ -141,7 +141,7 @@
       <div class="row">
         <div class="col-md-12">
 
-          <h2>Log In </h2>
+          <h2>Register </h2>
 
           <!-- Breadcrumbs -->
           <nav id="breadcrumbs">
@@ -229,7 +229,7 @@
                   <small class="text-danger" *ngIf="newPassAgain.errors.required">Mật khẩu mới không được để trống</small>
                 </div>
                 <div *ngIf="newPassAgain.valid && newPassAgain.value != newPasswordConfirm.value">
-                  <small class="text-danger" *ngIf="newPassAgain.valid && newPassAgain.value != newPasswordConfirm.value">Mật khẩu không
+                  <small class="text-danger" *ngIf="newPassAgain.valid && newPassAgain.value != pass.value">Mật khẩu không
                     khớp </small>
                 </div>
 
